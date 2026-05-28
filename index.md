@@ -21,32 +21,44 @@ methodological extensions.
 
 ## Installation
 
+The canonical home for PESTO is
+[`AAGI-AUS/PESTO`](https://github.com/AAGI-AUS/PESTO). The current
+development tree and pre-built binaries are mirrored under the author’s
+GitHub account while the AAGI-AUS release channel is being finalised.
+
 From GitHub (development version):
 
 ``` r
 
 # install.packages("pak")
-pak::pak("AAGI-AUS/PESTO")
+pak::pak("max578/PESTO")
 ```
 
-Once the AAGI r-universe registry is live, pre-built binaries will be
-available:
+Pre-built binaries are available from the author’s r-universe:
 
 ``` r
 
 install.packages("PESTO", repos = c(
-  "https://aagi-aus.r-universe.dev",
+  "https://max578.r-universe.dev",
   "https://cloud.r-project.org"
 ))
 ```
 
 CRAN submission is in preparation.
 
-### System requirements
+## Dependencies
+
+System requirements:
 
 - R \>= 4.1.0
-- C++17 compiler
-- LAPACK/BLAS (provided by R)
+- C++17 compiler (clang on macOS, g++ on Linux, Rtools on Windows)
+- LAPACK/BLAS (bundled with R)
+
+R-package dependencies are declared in `DESCRIPTION`. Imports: `Rcpp`
+(\>= 1.0.12), `data.table`, `ggplot2`, `S7` (\>= 0.2.0), `yaml` (\>=
+2.3.0), `digest` (\>= 0.6.0). Suggested for vignettes and benchmarks:
+`testthat`, `knitr`, `rmarkdown`, `viridis`, `microbenchmark`, `Matrix`,
+`apsimx` (\>= 2.7.0).
 
 ## Quick Start
 
@@ -106,10 +118,22 @@ approximation.
 
 ## Documentation
 
-- [`vignette("getting-started", package = "PESTO")`](https://AAGI-AUS.github.io/PESTO/articles/getting-started.md)
+- [`vignette("getting-started", package = "PESTO")`](https://aagi-aus.github.io/PESTO/articles/getting-started.md)
   – Introduction and basic usage
-- [`vignette("surrogate-ies", package = "PESTO")`](https://AAGI-AUS.github.io/PESTO/articles/surrogate-ies.md)
+- [`vignette("surrogate-ies", package = "PESTO")`](https://aagi-aus.github.io/PESTO/articles/surrogate-ies.md)
   – Surrogate-accelerated IES tutorial
+
+## Contributing
+
+Contributions are welcome. Please see
+[`CONTRIBUTING.md`](https://aagi-aus.github.io/PESTO/CONTRIBUTING.md)
+for the development workflow, coding style, and the pull-request
+convention. Bug reports and feature requests go through [GitHub
+Issues](https://github.com/AAGI-AUS/PESTO/issues). Security-relevant
+defects should be reported privately per
+[`SECURITY.md`](https://aagi-aus.github.io/PESTO/SECURITY.md). All
+participants are expected to abide by the [Code of
+Conduct](https://aagi-aus.github.io/PESTO/CODE_OF_CONDUCT.md).
 
 ## Citation
 
@@ -119,7 +143,7 @@ citation("PESTO")
 ```
 
 > Moldovan, M. (2026). PESTO: Parameter Estimation, Surrogates, and
-> Tooling for Optimisation. R package version 0.1.0.
+> Tooling for Optimisation. R package version 0.4.1.
 > <https://github.com/AAGI-AUS/PESTO>
 
 ## Related Projects
@@ -129,6 +153,17 @@ citation("PESTO")
 - [pyEMU](https://github.com/pypest/pyemu) – Python interface for
   PEST/PEST++
 
+## Acknowledgements
+
+PESTO builds on the algorithmic legacy of the
+[PEST++](https://github.com/usgs/pestpp) project (US Geological Survey)
+and the underlying PEST framework by John Doherty. The package is
+developed at the University of Adelaide; the surrogate-acceleration,
+adaptive-ensemble-sizing, and convergence-aware components are original
+contributions of the author.
+
 ## License
 
-GPL-3
+GPL (\>= 3). See
+[`LICENSE.md`](https://aagi-aus.github.io/PESTO/LICENSE.md) for the full
+text.

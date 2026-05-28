@@ -5,12 +5,12 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>In-Process IES via R Callback — apsimx Adapter • PESTO</title>
+<title>In-Process IES via R Callback -- apsimx Adapter • PESTO</title>
 <script src="../deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="../deps/bootstrap-5.3.8/bootstrap.min.css" rel="stylesheet">
 <script src="../deps/bootstrap-5.3.8/bootstrap.bundle.min.js"></script><link href="../deps/font-awesome-6.5.2/css/all.min.css" rel="stylesheet">
 <link href="../deps/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet">
-<script src="../deps/headroom-0.11.0/headroom.min.js"></script><script src="../deps/headroom-0.11.0/jQuery.headroom.min.js"></script><script src="../deps/bootstrap-toc-1.0.1/bootstrap-toc.min.js"></script><script src="../deps/clipboard.js-2.0.11/clipboard.min.js"></script><script src="../deps/search-1.0.0/autocomplete.jquery.min.js"></script><script src="../deps/search-1.0.0/fuse.min.js"></script><script src="../deps/search-1.0.0/mark.min.js"></script><!-- pkgdown --><script src="../pkgdown.js"></script><meta property="og:title" content="In-Process IES via R Callback — apsimx Adapter">
+<script src="../deps/headroom-0.11.0/headroom.min.js"></script><script src="../deps/headroom-0.11.0/jQuery.headroom.min.js"></script><script src="../deps/bootstrap-toc-1.0.1/bootstrap-toc.min.js"></script><script src="../deps/clipboard.js-2.0.11/clipboard.min.js"></script><script src="../deps/search-1.0.0/autocomplete.jquery.min.js"></script><script src="../deps/search-1.0.0/fuse.min.js"></script><script src="../deps/search-1.0.0/mark.min.js"></script><!-- pkgdown --><script src="../pkgdown.js"></script><meta property="og:title" content="In-Process IES via R Callback -- apsimx Adapter">
 </head>
 <body>
     <a href="#main" class="visually-hidden-focusable">Skip to contents</a>
@@ -20,7 +20,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">PESTO</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.3.3</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.4.1</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,7 +55,7 @@
 <div class="row">
   <main id="main" class="col-md-9"><div class="page-header">
 
-      <h1>In-Process IES via R Callback — apsimx Adapter</h1>
+      <h1>In-Process IES via R Callback -- apsimx Adapter</h1>
             
       
       <small class="dont-index">Source: <a href="https://github.com/AAGI-AUS/PESTO/blob/main/vignettes/apsim-callback.Rmd" class="external-link"><code>vignettes/apsim-callback.Rmd</code></a></small>
@@ -80,7 +80,7 @@ the outer loop in R, calling the forward model in-process.</p>
 <li>The driver on a synthetic linear-Gaussian problem (recovers
 truth).</li>
 <li>The shape of the <code><a href="../reference/apsim_callback.html">apsim_callback()</a></code> adapter for
-<code>apsimx</code> (run block is disabled — needs APSIM
+<code>apsimx</code> (run block is disabled – needs APSIM
 installed).</li>
 </ol>
 </div>
@@ -188,7 +188,7 @@ returned matches what <code><a href="../reference/pesto_ies_callback.html">pesto
 missing report variable) are caught by the adapter and emerge as
 <code>NA</code> rows. <code><a href="../reference/pesto_ies_callback.html">pesto_ies_callback()</a></code>’s
 <code>on_failure = "na"</code> (default) carries those realisations
-forward unchanged so the ensemble survives partial failures;
+forward unchanged so the ensemble survives partial failures. Setting
 <code>on_failure = "stop"</code> aborts as soon as one row is
 missing.</p>
 </div>
@@ -246,7 +246,7 @@ and avoids per-realisation file I/O entirely.</p>
 <span><span class="co">#&gt; [1] stats     graphics  grDevices utils     datasets  methods   base     </span></span>
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt; other attached packages:</span></span>
-<span><span class="co">#&gt; [1] PESTO_0.3.3</span></span>
+<span><span class="co">#&gt; [1] PESTO_0.4.1</span></span>
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt; loaded via a namespace (and not attached):</span></span>
 <span><span class="co">#&gt;  [1] vctrs_0.7.3        cli_3.6.6          knitr_1.51         rlang_1.2.0       </span></span>

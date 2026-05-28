@@ -10,7 +10,7 @@ The CRAN tarball is intentionally self-contained: every example, test,
 and vignette runs without the upstream `pestpp-ies` binary. The
 `vignettes/pestpp-comparison-and-simulation.Rmd` vignette compares PESTO
 native IES against the pure-R textbook reference
-([`pesto_reference_ies()`](https://AAGI-AUS.github.io/PESTO/reference/pesto_reference_ies.md))
+([`pesto_reference_ies()`](https://aagi-aus.github.io/PESTO/reference/pesto_reference_ies.md))
 by default; this comparison is what every end-user sees.
 
 If you have `pestpp-ies` installed and want the vignette to extend its

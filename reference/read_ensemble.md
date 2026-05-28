@@ -25,7 +25,7 @@ columns. The first column `real_name` contains realisation names.
 
 ## See also
 
-[`write_ensemble()`](https://AAGI-AUS.github.io/PESTO/reference/write_ensemble.md)
+[`write_ensemble()`](https://aagi-aus.github.io/PESTO/reference/write_ensemble.md)
 
 ## Examples
 

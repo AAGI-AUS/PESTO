@@ -28,7 +28,7 @@ Invisible `NULL`.
 
 ## See also
 
-[`read_ensemble()`](https://AAGI-AUS.github.io/PESTO/reference/read_ensemble.md)
+[`read_ensemble()`](https://aagi-aus.github.io/PESTO/reference/read_ensemble.md)
 
 ## Examples
 
